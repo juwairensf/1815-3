@@ -1,0 +1,34 @@
+git config --global user.name
+git config --global user.email
+
+初始化设置全局的用户名和email；
+shift+insert 粘贴指令
+
+如果后面出现了报错，报错包含place tell me who u are	说明初始化设置不对；
+
+git init	初始化git仓库的指令
+Initialized empty Git repository in 你的路径
+
+git add 文件名	（表示将对应的文件名放入暂存区）
+git add -A		（将当前文件夹下所有的内容放入暂存区）
+git status		（查看暂存器状态）不支持中文
+git commit -m	所有暂存区的数据放入本地仓库（-m表示必须添加注释）
+
+版本号的概念；
+版本号对应本地仓库是唯一的，这个版本号是一个hash值（唯一值）标志着当前的版本，在任何时候都可以还原到当前状态；
+版本还原	git reset		git reset --hard 版本号
+查找版本号	git reflog
+查找完整版本号	git log
+
+git add -A
+git status
+git commit -m "20181009shifei新增版本还原"
+git reflog
+git reset --hard d8e2c3a
+git reset --hard 1e60e37
+
+cmd
+dir	当前文件夹下所有的内容（查看）；
+ping 127.0.0.1
+ipconfig
+
